@@ -7,6 +7,7 @@
     </h5>
 
     <form method="post" class="my-3">
+        <!-- 브라우저에 있는  csrf token_ 확인 -->
         {{form.csrf_token }}
     <!--오류 표시 start-->
     {% if form.errors %}
@@ -29,7 +30,7 @@
     {{ form.submit(class="btn btn-primary my-3") }}
     </form>
 </div>
-{% end block %}
+{% endblock %}
 
 
 

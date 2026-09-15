@@ -1,27 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <title>pybo 게시판</title>
-
-    <!--bootstrap css CDN-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
+    <title>Title</title>
 </head>
 <body>
-<nav class="navbar bg-info navbar-expand-sm data-bs-theme=dark">
+ass="navbar bg-info navbar-expand-sm data-bs-theme=dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href=""{{ url_for }}"
-
-
-">pybo</a>
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">pybo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,14 +40,8 @@
       </form>
     </div>
   </div>
-</nav>
-<!--기본 템플릿 안에 삽입할 내용 start-->
-{%block content %}
-{% endblock %}
-    <!--기본 템플릿 안에 삽입될 내용 End-->
 
-    <!--bootstrap js CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
